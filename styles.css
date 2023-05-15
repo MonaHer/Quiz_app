@@ -23,6 +23,7 @@ h1 {
 }
 
 .question-card {
+    display: flex;
     position: relative;
     margin: 50px auto 0 auto;
     flex-direction: column;
@@ -54,18 +55,22 @@ border-color: hotpink;
         font-size: 2rem;
 }
 
-.container-tags {
+ul {
 display: flex;
-justify-content: center;
+flex-direction: row;
+gap: 1px;
+list-style: none;
+align-self: flex-start;
 }
 
 .tags {
-    width: 25%;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    width: 40%;
+    margin: 100px 5px 10px;
+    padding: 3px 5px 5px 3px;
     text-align: center;
     color: #c394f2;
     border: #c394f2;
     border-style: solid;
-    justify-content: space-around;
+    border-radius: 8px;
+
 }
