@@ -18,7 +18,7 @@ border: solid;
 border-width: 5px;
 border-color: hotpink;
 position: sticky;
-top: 0px;
+top: 0;
 z-index: 1;
 }
 
@@ -50,6 +50,7 @@ border-color: hotpink;
     margin: 40px auto 0 auto;
     background-color: peachpuff;
     border-color: hotpink;
+    border-width: 3px;
     color: hotpink;
     font-size: 20px;
 }
@@ -85,6 +86,24 @@ align-self: flex-start;
     border-style: solid;
     border-radius: 8px;
     flex-wrap: wrap;
+
+}
+footer {
+    position: sticky;
+    bottom: 0;
+}
+.navbar {
+    display: flex;
+    border: solid;
+    border-color: hotpink;
+    border-width: 5px;
+    background-color: peachpuff;
+    justify-content: space-evenly;
+}
+
+.navbar-icon {
+    margin-top: 10px;
+    margin-bottom: 5px;
 
 }
 
