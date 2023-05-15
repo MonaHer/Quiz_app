@@ -2,6 +2,11 @@
     box-sizing: border-box; 
 padding:0; margin: 0}
 
+body {
+    background-color: lightyellow;
+    font-family: 'Arial';
+}
+
 .header {
 display: flex;
 align-items: center;
@@ -15,5 +20,63 @@ border-color: hotpink;
 
 h1 {
     color: hotpink;
-    font-family: 'Arial'
 }
+
+.question-card {
+    display: flex;
+    position: relative;
+    margin: 35px auto 0 auto;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    background-color: peachpuff;
+
+border: solid;
+border-color: hotpink;
+}
+.question {
+    padding-top: 40px;
+    color: hotpink;
+    font-size: 20px;
+    text-align: center;
+}
+
+.answer-button {
+    padding: 5px;
+    margin: 40px auto 0 auto;
+    background-color: peachpuff;
+    border-color: hotpink;
+    color: hotpink;
+    font-size: 20px;
+}
+
+.bookmark-button {
+        position: absolute;
+        top: -25px;
+        right: 10px;
+      
+        font-size: 2rem;
+}
+
+ul {
+display: flex;
+flex-direction: row;
+list-style: none;
+align-self: flex-start;
+}
+
+.tags {
+    width: 40%;
+    margin-top: 50px;  
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 3px 5px 5px 3px;
+    text-align: center;
+    color: #c394f2;
+    border: #c394f2;
+    border-style: solid;
+    border-radius: 8px;
+    flex-wrap: wrap;
+
+}
+
