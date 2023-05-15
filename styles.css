@@ -48,8 +48,24 @@ border-color: hotpink;
 
 .bookmark-button {
         position: absolute;
-        top: -20px;
-        right: -10px;
+        top: -30px;
+        right: 10px;
       
         font-size: 2rem;
+}
+
+.container-tags {
+display: flex;
+justify-content: center;
+}
+
+.tags {
+    width: 25%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    color: #c394f2;
+    border: #c394f2;
+    border-style: solid;
+    justify-content: space-around;
 }
