@@ -2,6 +2,11 @@
     box-sizing: border-box; 
 padding:0; margin: 0}
 
+body {
+    background-color: lightyellow;
+    font-family: 'Arial';
+}
+
 .header {
 display: flex;
 align-items: center;
@@ -15,5 +20,21 @@ border-color: hotpink;
 
 h1 {
     color: hotpink;
-    font-family: 'Arial'
+}
+
+.question-card {
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+color: hotpink;
+background-color: peachpuff;
+border: solid;
+border-color: hotpink;
+}
+
+.answer-button {
+    background-color: hotpink;
+    border-color: peachpuff;
+    color: peachpuff
+
 }
