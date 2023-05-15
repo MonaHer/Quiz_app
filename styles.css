@@ -15,7 +15,11 @@ width: 100%;
 margin: auto;
 background-color: peachpuff;
 border: solid;
+border-width: 5px;
 border-color: hotpink;
+position: sticky;
+top: 0px;
+z-index: 1;
 }
 
 h1 {
@@ -48,6 +52,10 @@ border-color: hotpink;
     border-color: hotpink;
     color: hotpink;
     font-size: 20px;
+}
+
+.answer-button:hover {
+    background-color: #c394f2
 }
 
 .bookmark-button {
