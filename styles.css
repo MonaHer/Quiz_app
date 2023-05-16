@@ -99,18 +99,19 @@ footer {
     border-width: 5px;
     background-color: peachpuff;
     justify-content: space-evenly;
+    align-items: center;
 }
+
 
 .navbar-icon {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    border: solid;
-    padding: 5px 5px 5px 5px;
-    background-color: hotpink;
-    border-color: #c394f2;
+    margin: 0;
+    border-width: 2px;
+    border-color: hotpink;
+    flex-grow: 1;
+
 }
 
-.navbar-icon:hover {
-    background-color: #c394f2;
-}
 
+.nav-active{
+background-color: rgb(235, 166, 105);
+}
