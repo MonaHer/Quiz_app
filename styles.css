@@ -104,6 +104,13 @@ footer {
 .navbar-icon {
     margin-top: 10px;
     margin-bottom: 5px;
+    border: solid;
+    padding: 5px 5px 5px 5px;
+    background-color: hotpink;
+    border-color: #c394f2;
+}
 
+.navbar-icon:hover {
+    background-color: #c394f2;
 }
 
