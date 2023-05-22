@@ -126,3 +126,16 @@ background-color: rgb(235, 166, 105);
 
 }
 
+.counters {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 10px 10px 10px;
+}
+
+.question-counter {
+    border: solid;
+}
+
+.bookmark-counter {
+border: solid;
+}
