@@ -116,7 +116,7 @@ background-color: rgb(235, 166, 105);
 .profile-site{
    display: grid;
    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
    align-content: space-evenly;
    margin-left: 50px;
    margin-right: 50px;
@@ -126,6 +126,8 @@ background-color: rgb(235, 166, 105);
 .username {
     grid-column: span 2;
     grid-area: 1 / 1 / span 1 / span 2;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .aboutme {
@@ -135,11 +137,9 @@ background-color: rgb(235, 166, 105);
 
 
 .question-counter {
-    display: flex;
     border: solid;
     grid-area: 3 / 1 / span 1 /span 1;
-    justify-content: space-evenly;
-    padding-top: 40px;
+    padding: 0;
     
 }
 
@@ -164,7 +164,7 @@ background-color: rgb(235, 166, 105);
     border: solid;
     grid-area: 5 / 1 / span 1 /span 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 40px;
 
 }
