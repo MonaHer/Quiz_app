@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="./index.js" defer></script>
   </head>
   <body data-js="body">
     <header class="header" data-js="header">
@@ -14,10 +15,12 @@
     <main>
       <section class="question-card">
         <p class="question">What property flips the axes in flexbox?</p>
-        <button class="answer-button">Show Answer</button>
-        <button class="bookmark-button" data-js="bookmark-button">
+        <button class="answer-button" data-js="answer-button">
+          Show Answer
+        </button>
+        <p data-js="answer">Answer</p>
+        <button type="button" class="bookmark-button" data-js="bookmark-button">
           <svg
-            data-js="bookmark-icon"
             xmlns="http://www.w3.org/2000/svg"
             height="48"
             viewBox="0 -960 960 960"
@@ -28,7 +31,6 @@
             />
           </svg>
         </button>
-        <blockquote data-js="output">Answer</blockquote>
         <ul>
           <li class="tags">#html</li>
           <li class="tags">#css</li>
@@ -41,7 +43,6 @@
         <button type="button" class="answer-button" data-js="answer-button">
           Show Answer
         </button>
-        <img class="bookmark" src="bookmark.png" />
         <ul>
           <li class="tags">#html</li>
           <li class="tags">#css</li>
@@ -52,7 +53,6 @@
       <section class="question-card">
         <p class="question">What property flips the axes in flexbox?</p>
         <button class="answer-button">Show Answer</button>
-        <img class="bookmark" src="bookmark-white.png" />
         <ul>
           <li class="tags">#html</li>
           <li class="tags">#css</li>
@@ -63,7 +63,6 @@
       <section class="question-card">
         <p class="question">What property flips the axes in flexbox?</p>
         <button class="answer-button">Show Answer</button>
-        <img class="bookmark" src="bookmark-white.png" />
         <ul>
           <li class="tags">#html</li>
           <li class="tags">#css</li>
@@ -93,5 +92,4 @@
       </nav>
     </footer>
   </body>
-  <script src="index.js"></script>
 </html>

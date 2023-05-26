@@ -14,16 +14,17 @@ buttonToggle.addEventListener("click", () => {
   navbarElement.classList.toggle("dark");
 });
 
-const buttonAnswer = document.querySelector('[data-js="answer-button"]');
-
-const answer = `flexdirection`;
-buttonAnswer.addEventListener("click", () => {
-  output.textContent = answer;
-});
-
 const buttonBookmark = document.querySelector('[data-js="bookmark-button"]');
 const bookmarkIcon = document.querySelector('[data-js="bookmark-icon"]');
 
 buttonBookmark.addEventListener("click", () => {
-  bookmarkIcon.classList.toggle("active");
+  buttonBookmark.classList.toggle("active");
+
+  console.log("hello world");
+});
+
+const buttonAnswer = document.querySelector('[data-js="answer-button"]');
+const answer = document.querySelector('[data-js="answer"]');
+buttonAnswer.addEventListener("click", () => {
+  answer.classList.toggle("hidden");
 });
