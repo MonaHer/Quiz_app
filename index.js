@@ -8,23 +8,33 @@ const buttonToggle = document.querySelector('[data-js="toggle-button"]');
 
 const output = document.querySelector('[data-js="output"]');
 
-buttonToggle.addEventListener("click", () => {
+buttonToggle?.addEventListener("click", () => {
   bodyElement.classList.toggle("dark");
   headerElement.classList.toggle("dark");
   navbarElement.classList.toggle("dark");
 });
 
 const buttonBookmark = document.querySelector('[data-js="bookmark-button"]');
-const bookmarkIcon = document.querySelector('[data-js="bookmark-icon"]');
 
-buttonBookmark.addEventListener("click", () => {
+buttonBookmark?.addEventListener("click", () => {
   buttonBookmark.classList.toggle("active");
-
-  console.log("hello world");
 });
 
 const buttonAnswer = document.querySelector('[data-js="answer-button"]');
 const answer = document.querySelector('[data-js="answer"]');
-buttonAnswer.addEventListener("click", () => {
+
+buttonAnswer?.addEventListener("click", () => {
   answer.classList.toggle("hidden");
+
+  if (answer.classList.contains("hidden")) {
+    buttonAnswer.textContent = "Show Answer";
+  } else {
+    buttonAnswer.textContent = "Hide Answer";
+  }
 });
+
+/*if (buttonAnswer.textContent === "Show Answer") {
+    buttonAnswer.textContent = "Hide Answer";
+  } else {
+    buttonAnswer.textContent = "Show Answer";
+  }*/

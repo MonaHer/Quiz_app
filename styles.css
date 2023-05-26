@@ -81,7 +81,7 @@ h1 {
 }
 
 .active {
-  background-color: lightcoral;
+  background-color: #f08080;
   color: lightcoral;
 }
 
@@ -113,8 +113,10 @@ ul {
   border-radius: 8px;
 }
 footer {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   bottom: 0;
+  left: 0;
 }
 .navbar {
   display: flex;
@@ -160,7 +162,8 @@ h3 {
 
 .counters {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 50px;
 }
 
 .question-counter {
@@ -185,16 +188,10 @@ h3 {
 
 .settings {
   display: flex;
-  justify-content: flex-start;
-  margin-left: 95px;
-  margin-top: 15px;
-}
-
-.dark-mode {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 20px;
 }
 
 .toggle-button {
