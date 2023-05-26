@@ -20,3 +20,10 @@ const answer = `flexdirection`;
 buttonAnswer.addEventListener("click", () => {
   output.textContent = answer;
 });
+
+const buttonBookmark = document.querySelector('[data-js="bookmark-button"]');
+const bookmarkIcon = document.querySelector('[data-js="bookmark-icon"]');
+
+buttonBookmark.addEventListener("click", () => {
+  bookmarkIcon.classList.toggle("active");
+});
