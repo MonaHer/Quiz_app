@@ -12,12 +12,18 @@ buttonToggle?.addEventListener("click", () => {
   bodyElement.classList.toggle("dark");
   headerElement.classList.toggle("dark");
   navbarElement.classList.toggle("dark");
+
+  if (bodyElement.classList.contains("dark")) {
+    buttonToggle.textContent = "Light Mode";
+  } else {
+    buttonToggle.textContent = "Dark Mode";
+  }
 });
 
 const buttonBookmark = document.querySelector('[data-js="bookmark-button"]');
-
+const bookmarkIcon = document.querySelector('[data-js="bookmark-icon"]');
 buttonBookmark?.addEventListener("click", () => {
-  buttonBookmark.classList.toggle("active");
+  bookmarkIcon.classList.toggle("active");
 });
 
 const buttonAnswer = document.querySelector('[data-js="answer-button"]');
