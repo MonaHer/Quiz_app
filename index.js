@@ -20,6 +20,7 @@ buttonToggle?.addEventListener("click", () => {
 
 const buttonBookmark = document.querySelector('[data-js="bookmark-button"]');
 const bookmarkIcon = document.querySelector('[data-js="bookmark-icon"]');
+
 buttonBookmark?.addEventListener("click", () => {
   bookmarkIcon.classList.toggle("active");
 });
@@ -42,3 +43,5 @@ buttonAnswer?.addEventListener("click", () => {
   } else {
     buttonAnswer.textContent = "Show Answer";
   }*/
+
+const submitButton = document.querySelector;

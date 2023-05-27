@@ -20,9 +20,7 @@ body.dark {
 
 .navbar.dark {
   background-color: rgb(50, 51, 58);
-  
 }
-
 
 .header {
   display: flex;
@@ -79,6 +77,11 @@ h1 {
 
 .hidden {
   display: none;
+}
+
+.answer {
+  color: hotpink;
+  font-size: 20px;
 }
 
 .active {
@@ -204,10 +207,32 @@ h3 {
 }
 
 form {
-  border: 1px double
+  border: 1px dotted hotpink;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   width: 80%;
   margin: 20px auto;
-  padding: 2;
+  padding: 10px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid hotpink;
+  color: hotpink;
+}
+
+legend {
+  font-size: 20px;
+}
+
+label {
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.submit-button {
+  margin-top: 40px;
+  padding: 5px 5px;
 }
