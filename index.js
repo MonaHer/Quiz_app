@@ -6,8 +6,6 @@ const navbarElement = document.querySelector('[data-js="navbar"]');
 
 const buttonToggle = document.querySelector('[data-js="toggle-button"]');
 
-const output = document.querySelector('[data-js="output"]');
-
 buttonToggle?.addEventListener("click", () => {
   bodyElement.classList.toggle("dark");
   headerElement.classList.toggle("dark");

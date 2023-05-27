@@ -20,8 +20,9 @@ body.dark {
 
 .navbar.dark {
   background-color: rgb(50, 51, 58);
-  color: white;
+  
 }
+
 
 .header {
   display: flex;
@@ -200,4 +201,13 @@ h3 {
 .toggle-button {
   padding: 5px 20px;
   border-radius: 10px;
+}
+
+form {
+  border: 1px double
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+  padding: 2;
 }
