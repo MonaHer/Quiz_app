@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="./index.js" defer></script>
   </head>
   <body data-js="body">
     <header class="header" data-js="header">
       <h1>Quiz App</h1>
     </header>
     <main>
-        <form>
+        <form data-js="question-form">
             <fieldset>
                 <legend>Create new questions</legend>
                 <label for="your-question">Your question</label>
-                <textarea type="text" name="your-question" id="your question" required></textarea>
+                <textarea type="text" name="your-question" id="your question" data-js="question-input" required></textarea>
                 <label for="your-answer">Your answer</label>
-                <textarea type="text" name="your-answer" id="your-answer" required></textarea>
+                <textarea type="text" name="your-answer" id="your-answer" data-js="answer-input" required></textarea>
                 <label for="your-tags">Tag</label>
-                <input type="text" name="your-tags" id="your-tags" required/>
+                <input type="text" name="your-tags" id="your-tags" data-js="tags-input" required/>
             </fieldset>
             <button type="submit" class="submit-button">Submit</button>
         </form>
@@ -47,5 +48,4 @@
       </nav>
     </footer>
   </body>
-  <script src="index.js"></script>
 </html>
