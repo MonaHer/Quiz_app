@@ -12,8 +12,8 @@
     <header class="header" data-js="header">
       <h1>Quiz App</h1>
     </header>
-    <main>
-        <form class="form" data-js="card__question-form">
+    <main data-js="main">
+        <form class="form" data-js="question-form">
             
                 <legend class="form__legend">Create new questions</legend>
                 <label for="your-question" class="form__label">Your question</label>
@@ -21,7 +21,7 @@
                 <label for="your-answer" class="form__label">Your answer</label>
                 <textarea type="text" name="your-answer" id="your-answer" data-js="answer-input" required></textarea>
                 <label for="your-tags" class="form__label">Tag</label>
-                <input type="text" name="your-tags" id="your-tags" data-js="tags-input" required/>
+                <input type="text" name="your-tags" id="your-tags" data-js="tags-input" pattern="#\w+" required/>
             <button type="submit" class="form__submit-button">Submit</button>
         </form>
     </main>
