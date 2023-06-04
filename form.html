@@ -13,16 +13,15 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-        <form data-js="question-form">
-            <fieldset>
-                <legend>Create new questions</legend>
-                <label for="your-question">Your question</label>
+        <form class= "question-form" data-js="question-form">
+            
+                <legend class="form-legend">Create new questions</legend>
+                <label for="your-question" class="form-label">Your question</label>
                 <textarea type="text" name="your-question" id="your question" data-js="question-input" required></textarea>
                 <label for="your-answer">Your answer</label>
                 <textarea type="text" name="your-answer" id="your-answer" data-js="answer-input" required></textarea>
                 <label for="your-tags">Tag</label>
                 <input type="text" name="your-tags" id="your-tags" data-js="tags-input" required/>
-            </fieldset>
             <button type="submit" class="submit-button">Submit</button>
         </form>
     </main>
