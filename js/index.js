@@ -22,7 +22,7 @@ const buttonBookmark = document.querySelector('[data-js="bookmark-button"]');
 const bookmarkIcon = document.querySelector('[data-js="bookmark-icon"]');
 
 buttonBookmark?.addEventListener("click", () => {
-  bookmarkIcon.classList.toggle("active");
+  bookmarkIcon.classList.toggle("card__bookmark-button--active");
 });
 
 const buttonAnswer = document.querySelector('[data-js="answer-button"]');

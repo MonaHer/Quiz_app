@@ -1,4 +1,4 @@
-.question-card {
+.card {
   display: flex;
   position: relative;
   margin: 35px auto 0 auto;
@@ -11,14 +11,14 @@
   border-color: hotpink;
   flex-wrap: wrap;
 }
-.question {
+.card__question {
   text-align: center;
   margin: 40px;
   color: hotpink;
   font-size: 20px;
 }
 
-.answer-button {
+.card__answer-button {
   padding: 5px;
   margin-bottom: 20px;
   background-color: peachpuff;
@@ -28,7 +28,7 @@
   font-size: 20px;
 }
 
-.answer-button:hover {
+.card__answer-button:hover {
   background-color: #c394f2;
 }
 
@@ -36,17 +36,12 @@
   display: none;
 }
 
-.answer {
+.card__answer {
   color: hotpink;
   font-size: 20px;
 }
 
-.active {
-  filter: invert(73%) sepia(33%) saturate(1470%) hue-rotate(307deg)
-    brightness(103%) contrast(88%);
-}
-
-.bookmark-button {
+.card__bookmark-button {
   position: absolute;
   border: none;
   background: transparent;
@@ -57,14 +52,19 @@
   cursor: pointer;
 }
 
-.tags-list {
+.card__bookmark-button--active {
+  filter: invert(73%) sepia(33%) saturate(1470%) hue-rotate(307deg)
+    brightness(103%) contrast(88%);
+}
+
+.card__tags-list {
   display: flex;
   flex-direction: row;
   list-style: none;
   align-self: flex-start;
 }
 
-.tags {
+.card__tags {
   width: 40%;
   margin-top: 50px;
   margin-left: 10px;

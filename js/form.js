@@ -7,23 +7,23 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const newQuestionCard = document.createElement("section");
-  newQuestionCard.classList.add("question-card");
+  newQuestionCard.classList.add("card");
   form.append(newQuestionCard);
 
   const newQuestion = document.createElement("p");
-  newQuestion.classList.add("question");
+  newQuestion.classList.add("card__question");
   newQuestion.textContent = questionInput.value;
   newQuestionCard.append(newQuestion);
 
   const newAnswerButton = document.createElement("button");
   newAnswerButton.textContent = "Show Answer";
   newAnswerButton.setAttribute("type", "button");
-  newAnswerButton.classList.add("answer-button");
+  newAnswerButton.classList.add("card__answer-button");
   newQuestion.append(newAnswerButton);
 
   const newBookmarkButton = document.createElement("button");
   newBookmarkButton.setAttribute("type", "button");
-  newBookmarkButton.classList.add("bookmark-button");
+  newBookmarkButton.classList.add("card__bookmark-button");
   newQuestionCard.append(newAnswerButton);
 
   const newAnswer = document.createElement("p");
@@ -31,10 +31,11 @@ form.addEventListener("submit", (e) => {
   newQuestion.append(newAnswer);
 
   const newTagsList = document.createElement("ul");
+  newTagsList.classList.add("card__tags-list");
   newQuestion.append(newTagsList);
 
   const newTags = document.createElement("li");
-  newTags.classList.add("tags");
+  newTags.classList.add("card__tags");
   newTags.textContent = tagsInput.value;
   newTagsList.append(newTags);
 

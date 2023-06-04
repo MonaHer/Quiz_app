@@ -1,4 +1,4 @@
-.question-form {
+.form {
   border: 1px dotted hotpink;
   display: flex;
   justify-content: center;
@@ -8,16 +8,16 @@
   padding: 10px;
 }
 
-.form-legend {
-  font-size: 20px;
+.form__legend {
+  font-size: 25px;
 }
 
-.form-label {
-  font-size: 15px;
+.form__label {
+  font-size: 18px;
   margin-top: 30px;
 }
 
-.submit-button {
+.form__submit-button {
   margin-top: 40px;
   padding: 5px 5px;
 }
