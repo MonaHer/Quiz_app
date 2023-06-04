@@ -16,8 +16,8 @@ form.addEventListener("submit", (e) => {
   newBookmarkButton.classList.add("card__bookmark-button");
   newQuestionCard.append(newBookmarkButton);
 
-  const newBookmarkIcon = document.createElement("svg");
-  newBookmarkIcon.setAttribute("src", "/icons/bookmark.svg");
+  const newBookmarkIcon = document.createElement("img");
+  newBookmarkIcon.setAttribute("src", "icons/bookmark.svg");
   newBookmarkButton.append(newBookmarkIcon);
 
   const newQuestion = document.createElement("p");
