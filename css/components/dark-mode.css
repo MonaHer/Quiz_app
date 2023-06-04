@@ -1,0 +1,12 @@
+body.dark {
+  background-color: rgb(50, 51, 58);
+  color: hotpink;
+}
+
+.header.dark {
+  background-color: rgb(50, 51, 58);
+}
+
+.navbar.dark {
+  background-color: rgb(50, 51, 58);
+}
