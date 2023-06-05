@@ -1,3 +1,5 @@
+import createNewCard from "./components/CreateNewCard.js";
+
 const bodyElement = document.querySelector('[data-js="body"]');
 
 const headerElement = document.querySelector('[data-js="header"]');
@@ -37,3 +39,9 @@ buttonAnswer?.addEventListener("click", () => {
     buttonAnswer.textContent = "Hide Answer";
   }
 });
+
+const root = document.getElementById("root");
+
+const createNewCardElement = createNewCard();
+
+root.append(createNewCardElement);
