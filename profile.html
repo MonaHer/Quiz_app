@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="css/global.css" />
-    <script type="module" src="js/index.js" defer></script>
+    <script type="module" src="./js/index.js" defer></script>
   </head>
   <body data-js="body">
     <header class="header" data-js="header">
@@ -38,7 +38,11 @@
       </section>
       <section class="profile__settings">
         <p>Settings</p>
-        <button type="button" class="profile__dark-mode-button" data-js="toggle-button">
+        <button
+          type="button"
+          class="profile__dark-mode-button"
+          data-js="toggle-button"
+        >
           Dark Mode
         </button>
       </section>
@@ -50,12 +54,18 @@
             <a class="navbar__item" href="index.html"
               ><img src="/icons/home.png" style="height: 3em; width: 3em"
             /></a>
-          </li class="navbar__icon">
+          </li>
+          <li class="navbar__icon">
             <a class="navbar__item" href="bookmarkpage.html"
               ><img src="/icons/bookmark.png" style="height: 3em; width: 3em"
             /></a>
-            <li class="navbar__icon"> <a class="navbar__item" href="form.html"><img src="/icons/plus.png" style="height:3em"/>
-          </a></li>
+          </li>
+
+          <li class="navbar__icon">
+            <a class="navbar__item" href="form.html"
+              ><img src="/icons/plus.png" style="height: 3em" />
+            </a>
+          </li>
           <li class="navbar__icon navbar__item--active">
             <a class="navbar__item" href="profile.html"
               ><img src="/icons/user.png" style="height: 3em; width: 3em"
