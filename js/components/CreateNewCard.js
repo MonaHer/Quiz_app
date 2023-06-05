@@ -47,4 +47,5 @@ export default function createNewCard() {
 
     e.target.reset();
   });
+  return newQuestionCard;
 }
