@@ -13,17 +13,35 @@
       <h1>Quiz App</h1>
     </header>
     <main data-js="main">
-        <form class="form" data-js="question-form">
-            
-                <legend class="form__legend">Create new questions</legend>
-                <label for="your-question" class="form__label">Your question</label>
-                <textarea type="text" name="your-question" id="your-question" data-js="question-input" required></textarea>
-                <label for="your-answer" class="form__label">Your answer</label>
-                <textarea type="text" name="your-answer" id="your-answer" data-js="answer-input" required></textarea>
-                <label for="your-tags" class="form__label">Tag</label>
-                <input type="text" name="your-tags" id="your-tags" data-js="tags-input" pattern="#\w+" required/>
-            <button type="submit" class="form__submit-button">Submit</button>
-        </form>
+      <form class="form" data-js="question-form">
+        <legend class="form__legend">Create new questions</legend>
+        <label for="your-question" class="form__label">Your question</label>
+        <textarea
+          type="text"
+          name="your-question"
+          id="your-question"
+          data-js="question-input"
+          required
+        ></textarea>
+        <label for="your-answer" class="form__label">Your answer</label>
+        <textarea
+          type="text"
+          name="your-answer"
+          id="your-answer"
+          data-js="answer-input"
+          required
+        ></textarea>
+        <label for="your-tags" class="form__label">Tag</label>
+        <input
+          type="text"
+          name="your-tags"
+          id="your-tags"
+          data-js="tags-input"
+          pattern="#\w+"
+          required
+        />
+        <button type="submit" class="form__submit-button">Submit</button>
+      </form>
     </main>
     <footer>
       <nav>
@@ -32,12 +50,18 @@
             <a class="navbar__item" href="index.html"
               ><img src="/icons/home.png" style="height: 3em; width: 3em"
             /></a>
-          </li class="navbar__icon">
+          </li>
+
+          <li class="navbar__icon">
             <a class="navbar__item" href="bookmarkpage.html"
               ><img src="/icons/bookmark.png" style="height: 3em; width: 3em"
             /></a>
-            <li class="navbar__icon navbar__item--active"> <a class="navbar__item" href="form.html"><img src="/icons/plus.png" style="height:3em"/>
-          </a></li>
+          </li>
+          <li class="navbar__icon navbar__item--active">
+            <a class="navbar__item" href="form.html"
+              ><img src="/icons/plus.png" style="height: 3em" />
+            </a>
+          </li>
           <li class="navbar__icon">
             <a class="navbar__item" href="profile.html"
               ><img src="/icons/user.png" style="height: 3em; width: 3em"
