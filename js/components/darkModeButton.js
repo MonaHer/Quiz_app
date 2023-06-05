@@ -7,7 +7,7 @@ export default function darkModeButton() {
 
   const buttonToggle = document.querySelector('[data-js="toggle-button"]');
 
-  buttonToggle.addEventListener("click", () => {
+  buttonToggle?.addEventListener("click", () => {
     bodyElement.classList.toggle("dark");
     headerElement.classList.toggle("dark");
     navbarElement.classList.toggle("dark");
