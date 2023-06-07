@@ -18,4 +18,5 @@ export default function darkModeButton() {
       buttonToggle.textContent = "Dark Mode";
     }
   });
+  return buttonToggle;
 }
