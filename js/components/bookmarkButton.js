@@ -5,5 +5,4 @@ export default function bookmarkButton() {
   buttonBookmark?.addEventListener("click", () => {
     bookmarkIcon.classList.toggle("card__bookmark-button--active");
   });
-  return buttonBookmark;
 }

@@ -3,11 +3,9 @@ import darkModeButton from "./components/darkModeButton.js";
 import bookmarkButton from "./components/bookmarkButton.js";
 import answerButton from "./components/answerButton.js";
 
-const root = document.getElementById("root");
+const body = document.getElementById("body");
 
 console.log("hello");
-
-const createNewCardElement = createNewCard();
 
 console.log("world");
 
@@ -17,14 +15,10 @@ console.log("apple");
 
 const bookmarkButtonElement = bookmarkButton();
 
-console.log("strawberry");
 const answerButtonElement = answerButton();
 
-console.log("ciao");
+const createNewCardElement = createNewCard();
 
-root.append(
-  createNewCardElement,
-  darkModeButtonElement,
-  bookmarkButtonElement,
-  answerButtonElement
-);
+console.log("strawberry");
+
+body.append(createNewCardElement);

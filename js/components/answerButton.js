@@ -11,5 +11,4 @@ export default function answerButton() {
       buttonAnswer.textContent = "Hide Answer";
     }
   });
-  return answer;
 }
