@@ -1,39 +1,24 @@
-const bodyElement = document.querySelector('[data-js="body"]');
+import createNewCard from "./components/createNewCard.js";
+import darkModeButton from "./components/darkModeButton.js";
+import bookmarkButton from "./components/bookmarkButton.js";
+import answerButton from "./components/answerButton.js";
 
-const headerElement = document.querySelector('[data-js="header"]');
+const body = document.getElementById("body");
 
-const navbarElement = document.querySelector('[data-js="navbar"]');
+console.log("hello");
 
-const buttonToggle = document.querySelector('[data-js="toggle-button"]');
+console.log("world");
 
-buttonToggle?.addEventListener("click", () => {
-  bodyElement.classList.toggle("dark");
-  headerElement.classList.toggle("dark");
-  navbarElement.classList.toggle("dark");
+const darkModeButtonElement = darkModeButton();
 
-  if (bodyElement.classList.contains("dark")) {
-    buttonToggle.textContent = "Light Mode";
-  } else {
-    buttonToggle.textContent = "Dark Mode";
-  }
-});
+console.log("apple");
 
-const buttonBookmark = document.querySelector('[data-js="bookmark-button"]');
-const bookmarkIcon = document.querySelector('[data-js="bookmark-icon"]');
+const bookmarkButtonElement = bookmarkButton();
 
-buttonBookmark?.addEventListener("click", () => {
-  bookmarkIcon.classList.toggle("active");
-});
+const answerButtonElement = answerButton();
 
-const buttonAnswer = document.querySelector('[data-js="answer-button"]');
-const answer = document.querySelector('[data-js="answer"]');
+const createNewCardElement = createNewCard();
 
-buttonAnswer?.addEventListener("click", () => {
-  answer.classList.toggle("hidden");
+console.log("strawberry");
 
-  if (answer.classList.contains("hidden")) {
-    buttonAnswer.textContent = "Show Answer";
-  } else {
-    buttonAnswer.textContent = "Hide Answer";
-  }
-});
+body.append(createNewCardElement);

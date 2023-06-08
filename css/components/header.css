@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  background-color: peachpuff;
+  border: solid;
+  border-width: 5px;
+  border-color: hotpink;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}

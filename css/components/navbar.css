@@ -1,0 +1,26 @@
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.navbar {
+  display: flex;
+  border: 5px solid hotpink;
+  background-color: peachpuff;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.navbar__item {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar__icon {
+  width: 25%;
+}
+
+.navbar__item--active {
+  background-color: rgb(235, 166, 105);
+}
